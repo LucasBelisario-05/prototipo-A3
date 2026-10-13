@@ -8,7 +8,7 @@ Dê dois cliques em `index.html` (Chrome ou Edge). Em telas largas o app aparece
 ## Telas
 | Tela | Arquivo |
 |---|---|
-| 1. Escolha de perfil | `index.html` |
+| 1. Login (escolha de perfil) | `index.html` |
 | 2. Início do paciente | `paciente/inicio.html` |
 | 3. Triagem breve | `paciente/triagem.html` (+ `triagem-alerta.html`) |
 | 4. Passo a passo | `paciente/orientacao.html?recurso=frio` ou `calor` |
@@ -23,6 +23,7 @@ Dê dois cliques em `index.html` (Chrome ou Edge). Em telas largas o app aparece
 - `css/estilo.css`: único CSS (cores e medidas em variáveis no `:root`).
 - `js/dados.js`: todo o conteúdo de exemplo (objeto global `DADOS`). É aqui que o grupo troca as perguntas, a regra da triagem e preenche as fichas (`[a preencher]`).
 - `js/comum.js`: perfil, proteção de acesso, localStorage e favoritos.
+- `js/login.js`: tela de login (valida e-mail e senha, grava o perfil e abre a interface dele).
 - Um JS por tela (`triagem.js`, `orientacao.js`, `registro.js`, `busca.js`, `resultado.js`, `ficha.js`, `favoritos.js`, `comparar.js`) e `paciente.js` (lembretes e apagar dados).
 
 ## O que fica salvo no navegador (localStorage)
