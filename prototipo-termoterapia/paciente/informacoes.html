@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-perfil="paciente">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informações - Termoterapia</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- dados.js: conteúdo de exemplo. comum.js: perfil, proteção de acesso e localStorage -->
+  <script src="../js/dados.js"></script>
+  <script src="../js/comum.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="cabecalho">
+      <a class="voltar" href="inicio.html" data-voltar>← Voltar</a>
+      <h1 class="titulo-direita">Informações</h1>
+    </header>
+    <main class="conteudo">
+      <details class="recolhivel">
+        <summary>O que é termoterapia?</summary>
+        <p id="info-0"></p>
+      </details>
+      <details class="recolhivel">
+        <summary>Quando o frio costuma ajudar</summary>
+        <p id="info-1"></p>
+      </details>
+      <details class="recolhivel">
+        <summary>Quando o calor costuma ajudar</summary>
+        <p id="info-2"></p>
+      </details>
+      <details class="recolhivel">
+        <summary>Quando não usar sem falar com o profissional</summary>
+        <p id="info-3"></p>
+      </details>
+      <script>
+        // Coloca o texto de cada seção (vem de dados.js)
+        for (var i = 0; i < DADOS.informacoes.length; i++) {
+          document.getElementById("info-" + i).textContent = DADOS.informacoes[i].texto;
+        }
+      </script>
+    </main>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="inicio.html" aria-current="page"><span class="bolinha" aria-hidden="true"></span>Início</a>
+      <a href="tratamentos.html"><span class="bolinha" aria-hidden="true"></span>Tratamentos</a>
+      <a href="registro.html"><span class="bolinha" aria-hidden="true"></span>Evolução</a>
+      <a href="perfil.html"><span class="bolinha" aria-hidden="true"></span>Perfil</a>
+    </nav>
+  </div>
+</body>
+</html>

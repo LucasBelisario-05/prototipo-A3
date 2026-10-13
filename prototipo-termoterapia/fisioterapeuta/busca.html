@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-perfil="fisioterapeuta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Busca - Termoterapia</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- dados.js: conteúdo de exemplo. comum.js: perfil, proteção de acesso e localStorage -->
+  <script src="../js/dados.js"></script>
+  <script src="../js/comum.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="cabecalho">
+      <h1>Aba do fisioterapeuta</h1>
+      <a class="img-x p40" href="perfil.html" aria-label="Meu perfil"></a>
+    </header>
+    <main class="conteudo">
+      <div class="alternancia" role="group" aria-label="Tipo de busca">
+        <button type="button" id="modo-condicao" aria-pressed="true">Por condição</button>
+        <button type="button" id="modo-recurso" aria-pressed="false">Por recurso</button>
+      </div>
+      <div>
+        <label class="rotulo" for="campo-1" id="rotulo-1">1. Condição (10)</label>
+        <select id="campo-1"></select>
+      </div>
+      <div>
+        <label class="rotulo" for="campo-2">2. Objetivo terapêutico</label>
+        <select id="campo-2"></select>
+      </div>
+      <p class="aviso" id="aviso-busca" role="alert" hidden></p>
+      <button class="btn" type="button" id="btn-buscar">Buscar</button>
+      <section aria-labelledby="t-fav">
+        <h2 class="rotulo" id="t-fav" style="font-size:20px;margin:0 0 6px">Favoritos</h2>
+        <div id="favoritos" style="display:flex;flex-direction:column;gap:10px"></div>
+        <p style="margin-top:10px"><a href="favoritos.html" id="ver-todos" hidden>Ver todos</a></p>
+      </section>
+      <div class="espaco-vazio"></div>
+    </main>
+    <p class="aviso aviso-fixo">Apoia a decisão; não substitui o julgamento profissional.</p>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="busca.html" aria-current="page"><span class="bolinha" aria-hidden="true"></span>Buscar</a>
+      <a href="favoritos.html"><span class="bolinha" aria-hidden="true"></span>Favoritos</a>
+      <a href="evolucao.html"><span class="bolinha" aria-hidden="true"></span>Evolução</a>
+      <a href="perfil.html"><span class="bolinha" aria-hidden="true"></span>Perfil</a>
+    </nav>
+  </div>
+  <script src="../js/busca.js"></script>
+</body>
+</html>

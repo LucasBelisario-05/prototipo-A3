@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-perfil="paciente">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triagem breve - Termoterapia</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- dados.js: conteúdo de exemplo. comum.js: perfil, proteção de acesso e localStorage -->
+  <script src="../js/dados.js"></script>
+  <script src="../js/comum.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="cabecalho">
+      <a class="voltar" href="inicio.html" id="voltar">← Voltar</a>
+      <h1 class="titulo-direita" id="contador">Pergunta 1 de 4</h1>
+    </header>
+    <progress id="barra" value="1" max="4" aria-label="Progresso da triagem"></progress>
+    <main class="conteudo">
+      <h2 class="pergunta" id="pergunta"></h2>
+      <!-- triagem.js coloca aqui os botões de resposta -->
+      <div class="respostas" id="respostas"></div>
+      <div class="espaco-vazio"></div>
+    </main>
+    <p class="aviso aviso-fixo">Não substitui uma avaliação profissional.</p>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="inicio.html" aria-current="page"><span class="bolinha" aria-hidden="true"></span>Início</a>
+      <a href="tratamentos.html"><span class="bolinha" aria-hidden="true"></span>Tratamentos</a>
+      <a href="registro.html"><span class="bolinha" aria-hidden="true"></span>Evolução</a>
+      <a href="perfil.html"><span class="bolinha" aria-hidden="true"></span>Perfil</a>
+    </nav>
+  </div>
+  <script src="../js/triagem.js"></script>
+</body>
+</html>

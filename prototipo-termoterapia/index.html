@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escolha de perfil - Termoterapia</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- dados.js: conteúdo de exemplo. comum.js: perfil, proteção de acesso e localStorage -->
+  <script src="js/dados.js"></script>
+  <script src="js/comum.js"></script>
+</head>
+<body>
+  <div class="app">
+
+    <main class="tela-escolha">
+      <div class="img-x p170" role="img" aria-label="Logotipo do aplicativo"></div>
+      <h1>Termoterapia</h1>
+      <p>Seu cuidado na palma da mão</p>
+      <!-- comum.js salva o perfil escolhido no localStorage -->
+      <a class="btn grande" href="paciente/inicio.html" data-escolher-perfil="paciente">Sou paciente</a>
+      <a class="btn grande" href="fisioterapeuta/busca.html" data-escolher-perfil="fisioterapeuta">Sou fisioterapeuta</a>
+      <p>Funciona sem internet (paciente)</p>
+    </main>
+  </div>
+</body>
+</html>

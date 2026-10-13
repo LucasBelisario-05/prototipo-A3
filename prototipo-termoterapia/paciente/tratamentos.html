@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-perfil="paciente">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tratamentos - Termoterapia</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- dados.js: conteúdo de exemplo. comum.js: perfil, proteção de acesso e localStorage -->
+  <script src="../js/dados.js"></script>
+  <script src="../js/comum.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="cabecalho">
+      <a class="voltar" href="inicio.html" data-voltar>← Voltar</a>
+      <h1 class="titulo-direita">Tratamentos</h1>
+    </header>
+    <main class="conteudo">
+      <h2 class="titulo">Suas orientações</h2>
+      <p>Aqui aparecem só as orientações liberadas pelo seu fisioterapeuta.</p>
+      <a class="cartao-link" href="orientacao.html?recurso=frio">
+        <span class="img-x" role="img" aria-label="Imagem de frio"></span>
+        <span><span class="titulo">Frio</span><span class="descricao">Passo a passo com gelo</span></span>
+      </a>
+      <a class="cartao-link" href="orientacao.html?recurso=calor">
+        <span class="img-x" role="img" aria-label="Imagem de calor"></span>
+        <span><span class="titulo">Calor</span><span class="descricao">Passo a passo com bolsa morna</span></span>
+      </a>
+      <section aria-labelledby="t-lembretes">
+        <h2 class="titulo" id="t-lembretes" style="margin-bottom:12px">Seus lembretes</h2>
+        <div class="caixa" id="lista-lembretes"></div>
+      </section>
+    </main>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="inicio.html"><span class="bolinha" aria-hidden="true"></span>Início</a>
+      <a href="tratamentos.html" aria-current="page"><span class="bolinha" aria-hidden="true"></span>Tratamentos</a>
+      <a href="registro.html"><span class="bolinha" aria-hidden="true"></span>Evolução</a>
+      <a href="perfil.html"><span class="bolinha" aria-hidden="true"></span>Perfil</a>
+    </nav>
+  </div>
+  <script src="../js/paciente.js"></script>
+</body>
+</html>

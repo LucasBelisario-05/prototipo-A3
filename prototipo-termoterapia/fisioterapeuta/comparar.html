@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-perfil="fisioterapeuta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparar recursos - Termoterapia</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- dados.js: conteúdo de exemplo. comum.js: perfil, proteção de acesso e localStorage -->
+  <script src="../js/dados.js"></script>
+  <script src="../js/comum.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="cabecalho cab-fisio">
+      <a class="seta" href="busca.html" aria-label="Voltar" data-voltar>←</a>
+      <h1>Comparar recursos</h1>
+    </header>
+    <main class="conteudo">
+      <div id="conteudo" class="conteudo" style="padding:0;overflow:visible">
+        <div>
+          <label class="rotulo" for="campo-b">Comparar com</label>
+          <select id="campo-b"></select>
+        </div>
+        <div id="tabela-area"><p>Escolha o segundo recurso para comparar.</p></div>
+        <p class="aviso">A comparação não indica o melhor recurso.</p>
+      </div>
+      <div id="invalida" hidden>
+        <p class="aviso">Abra a comparação a partir de uma ficha.</p>
+        <p></p>
+        <a class="btn" href="busca.html">Voltar à busca</a>
+      </div>
+    </main>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="busca.html" aria-current="page"><span class="bolinha" aria-hidden="true"></span>Buscar</a>
+      <a href="favoritos.html"><span class="bolinha" aria-hidden="true"></span>Favoritos</a>
+      <a href="evolucao.html"><span class="bolinha" aria-hidden="true"></span>Evolução</a>
+      <a href="perfil.html"><span class="bolinha" aria-hidden="true"></span>Perfil</a>
+    </nav>
+  </div>
+  <script src="../js/comparar.js"></script>
+</body>
+</html>
